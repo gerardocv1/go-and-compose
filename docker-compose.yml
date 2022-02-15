@@ -7,3 +7,7 @@ services:
       target: dev
     volumes:
       - .:/opt/app/api
+networks :
+    appnet:
+        name: docker-compose_appnet
+        driver: bridge
