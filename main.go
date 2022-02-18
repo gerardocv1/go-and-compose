@@ -1,13 +1,15 @@
 package main
 
 import (
-  "fmt"
-  "time"
+	"fmt"
+
+	"github.com/gerardocv1/go-and-compose/config"
 )
 
 func main() {
-  for {
-    fmt.Println("Hello World 2")
-    time.Sleep(time.Second * 3)
-  }
+	fmt.Println(config.Get().AppName)
+	fmt.Println(config.Get().AppName)
+	fmt.Println(config.Get().Port)
+
+	fmt.Scanln()
 }
